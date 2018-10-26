@@ -41,6 +41,7 @@ public class YouClassName extends Application {
 After doing this.. Use it Like this
 
 for custom object
+```
        class User{
               public Name;
               public Age;
@@ -50,47 +51,59 @@ for custom object
        
        EasyDB.put("TAG_DATA_OBJECT",user)
        User userNew = EasyDB.getObject("TAG_DATA_OBJECT", User.class);
-       
+```
        
 for custom arraylist
-     
+```
        ArrayList<User> userArrayList = new ArrayList<>();
-       userArrayList.add(new User("Akshay",12));
-       userArrayList.add(new User("Aman",11));
+       userArrayList.add(new User("Tony",12));
+       userArrayList.add(new User("Jarvis",11));
        
        EasyDB.put("TAG_DATA_ARRAYLIST",userArrayList);
        ArrayList<User> userArrayListNew = EasyDB.getArrayList("TAG_DATA_ARRAYLIST", User.class);
-       
+```
        
 for String
+```
        EasyDB.put("TAG_DATA_STRING","Hello World");
        String Hi = EasyDB.getString("TAG_DATA_STRING"); //Hi = "Hello World"
+```
        
        
 for StringSet
+```
        Set<String> strings = new HashSet<>();
        strings.add("one");
        strings.add("two");
        strings.add("three");
        EasyDB.put("TAG_DATA_STRING_SET",strings);
-       Set<String> stringsNew = EasyDB.getStringSet("TAG_DATA_STRING_SET"); 
-       
+       Set<String> stringsNew = EasyDB.getStringSet("TAG_DATA_STRING_SET");
+```
+
        
 for int
-       EasyDB.put(5,"TAG_DATA_INT");
-       int i = EasyDB.getInt("TAG_DATA_INT"); //i = 5
-       
+```
+       EasyDB.put(7,"TAG_DATA_INT");
+       int i = EasyDB.getInt("TAG_DATA_INT"); //i = 7
+```
+
        
 for long
-       EasyDB.put("TAG_DATA_LONG",987654321);
-       long i = EasyDB.getLong("TAG_DATA_LONG"); //i = 987654321
-       
+```
+       EasyDB.put("TAG_DATA_LONG",12345564);
+       long i = EasyDB.getLong("TAG_DATA_LONG"); //i = 12345564
+```
+
        
 for float
+```
        EasyDB.put("TAG_DATA_INT",5.0f);
        int i = EasyDB.getInt("TAG_DATA_FLOAT"); //i = 5.0f
-       
-       
+```    
+   
+   
 for boolean
+```
        EasyDB.put("TAG_DATA_BOOLEAN",true);
        boolean val = EasyDB.getBoolean("TAG_DATA_BOOLEAN"); //val = true;
+```
