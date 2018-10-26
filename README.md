@@ -44,9 +44,9 @@ After doing this.. Use it Like this
 for custom object
 ```
        class User{
-              public Name;
-              public Age;
-              }
+              public String Name;
+              public int Age;
+       }
               
        User user = new User();
        
