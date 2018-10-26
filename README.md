@@ -37,6 +37,7 @@ public class YouClassName extends Application {
     
 }
 ```
+Don't forget to add this file to your Manifest.xml
 
 After doing this.. Use it Like this
 
